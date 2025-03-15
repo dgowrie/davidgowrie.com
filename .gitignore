@@ -1,0 +1,13 @@
+# Ignore sensitive files
+.htaccess
+.htpasswd
+env/
+secrets/
+
+# Ignore legacy code to be reviewed
+barry/
+secure/
+critters/
+quickstart.html
+index-v1.html
+.dh-diag
