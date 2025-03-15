@@ -1,0 +1,149 @@
+/*-----------------------------------------------------------------------------
+Title: Main Style Sheet
+Site:  http://www.davidgowrie.com/
+Version: 1.0
+Last Updated: 2007.12.09
+Author: David Gowrie
+Contact: david.gowrie@gmail.com
+-----------------------------------------------------------------------------*/
+
+/* =GENERAL
+====================================================================================== */
+
+/* Reset all browser-specific defaults */
+* {margin: 0; padding: 0;} /* Zero out browser default margins and paddings for all elements */
+ol,ul {list-style:none;} /* remove default list styles */
+h1,h2,h3,h4,h5,h6 {font-size:100%;} /* remove default font-sizes styles */
+a img {border: 0;} /* Remove border around linked images */
+table {border-collapse: collapse;} /* use the collapse model for tables, cells share common borders */
+fieldset {border: none;} /* Removes fieldset borders */
+label { cursor: pointer; } /* Give visual feedback that label elements are clickable and set focus on their target */
+        
+				
+body {
+	background: #ddd;
+	font: normal 62.5%/1.5 "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; /* set up 1em = 10px (at standard browser default settings of 16px) */
+	color: #000;
+}
+
+/* =LINKS 
+====================================================================================== */
+/* Defaults */
+a, a:link, a:visited {text-decoration:none; color:#369;}
+a:hover, a:active {	text-decoration:underline; color:#666;}
+a:focus { outline: none;} /* remove dotted outline when clicked in FF */
+
+
+/* =TYPOGRAPHY
+====================================================================================== */
+/* top level font-size setting // 1.2em = 12px */
+#container { font-size: 1.2em;}
+
+/* Header Defaults */
+
+/* h2 */
+
+/* h3 */
+
+/* h4 */
+
+
+/* =LAYOUT DIVS
+====================================================================================== */
+#container {
+	margin:50px auto 0;
+	width:760px;
+	background:#fff;
+	border:1px solid #369;
+}
+
+h1 {
+	padding:1em;
+	background:#69c;
+	border-bottom:5px solid #369;
+	font-family:Georgia, "Lucida Sans", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	font-size:2em;
+	color:#fff;
+	text-align:center
+}
+
+h2 {
+	background:url(../img/bg-h2-grad.gif) 0 0 repeat-x;
+	border-bottom:1px solid #ccc;
+	padding:1em 0 .5em 0;
+	font-size:1.2em;
+	text-align:center
+}
+
+p {
+	padding:5px;
+}
+
+ul {
+	list-style:disc;
+	margin:0 0 1em 20px;
+}
+
+/* =MASTHEAD - Includes Branding, Logo Flash, Navigation *******************************/	
+
+	/* =Branding *******************************/
+	
+	/* =Navigation *******************************/
+	
+		/* Main Menu */
+		
+		/* Sub Menu */
+
+
+
+
+/* =CONTENT - Includes xxxxxxxxxxxxxxxxxxxxxxx *******************************/		
+
+	/* =Main Content *******************************/
+	
+	/* =Secondary Content *******************************/
+
+
+
+
+/* =FOOTER - Includes xxxxxxxxxxxxxxxxxxxxxxx *******************************/		
+
+
+
+
+
+/* =MISC 
+====================================================================================== */
+/*-------------------
+P.I.E. FLOAT CLEARING - non-IE browsers only
+See http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+/* END P.I.E. FLOAT CLEARING 
+--------------------- */
+
+/* Generic classes for floats */
+.floatleft {float:left;}
+.floatright {float:right;}
+
+/* Generic Class for clearing floats  */
+.clear {
+	clear:both; 
+}
+
+/* Generic Class for clearing floats with EMPTY element 
+.clear {
+	clear:both; height:0px;
+	line-height:0px; visibility: hidden;
+}
+*/
+
+/* Generic class for display:none */
+.hide {
+	display:none;
+}
